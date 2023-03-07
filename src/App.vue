@@ -5,26 +5,14 @@
         <Navigation />
       </LayoutSection>
       <LayoutSection :secondary="true">
-        <Banner
-          title="Hello World"
-          status="success"
-          :action="{ content: 'Action', url:'https://google.com' }"
-          :secondaryAction="{ content: 'View all', url:'https://google.com' }"
-          @dismiss="dismissHandler"
-        >
-            <p>Hello I am a Shopify looking thing</p>
-        </Banner>
+        <CustomBanner>
+          <p>Hello</p>
+        </CustomBanner>
       </LayoutSection >
       <LayoutSection :secondary="true">
-        <Banner
-          title="Hello World"
-          status="success"
-          :action="{ content: 'Action', url:'https://google.com' }"
-          :secondaryAction="{ content: 'View all', url:'https://google.com' }"
-          @dismiss="dismissHandler"
-        >
-            <p>Hello I am a Shopify looking thing</p>
-        </Banner>
+        <CustomBanner>
+          <p>Hello 2</p>
+        </CustomBanner>
       </LayoutSection >
       
     </Layout>
@@ -32,10 +20,12 @@
 </template>
 
 <script>
-import Navigation from './Navigation.vue'
+import Navigation from './components/components/Navigation.vue'
+import CustomBanner from './components/components/Banner.vue'
 export default {
   components: {
-    Navigation
+    Navigation,
+    CustomBanner
   }
 }
 </script>
