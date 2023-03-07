@@ -1,1 +1,2 @@
-##Tributo Admin Panel App
+## Tributo Admin Panel App
+Manages Virtual Options for each products
